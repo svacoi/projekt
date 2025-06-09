@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <title>Seminarski rad</title>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<body>
+<header>
+    <img src="../images/logo1.png" alt="logo">
+    <nav>
+        <ul class="navigacija">
+            <li><a href="../naslovnica.html">Naslovnica</a></li>
+            <li><a href="../onama.html">O nama</a></li>
+            <li><a href="../novosti.html">Novosti</a></li>
+            <li><a href="../trgovina.html">Trgovina</a></li>
+        </ul>
+    </nav>
+</header>
+    
+    <main>
+        <div class="prvi">
+        <div class="kontakt">
+            <h2>Kontaktirajte Electronic Arts</h2>
+            <p>Ako imate tehničke poteškoće ili pitanja u vezi s igrom The Sims 3, obratite se službenoj korisničkoj podršci izdavača:</p>
+            <ul>
+                <li><strong>Korisnička podrška:</strong> <a href="https://help.ea.com/en/help-top-issues/?product=the-sims-3" target="_blank">EA Player Help</a></li>
+                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/TheSims/" target="_blank">The Sims</a></li>
+                <li><strong>Twitter:</strong> <a href="https://twitter.com/TheSims" target="_blank">@TheSims</a></li>
+            </ul>
+        </div>
+
+        <h2 style="text-align: center;">Pošaljite svoj upit</h2>
+        <form method="get">
+            <table style="width: 80%; margin: 0 auto; border-collapse: collapse; text-align: left; border: 1px solid black;">
+        <tr>
+            <td colspan="2"><label for="ime">Ime i prezime:</label><br>
+            <input type="text" id="ime" name="ime" required></td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="tema">Tema upita:</label><br>
+                <select id="tema" name="tema">
+                    <option value="tehnicki">Tehnička pomoć</option>
+                    <option value="sadrzaj">Prijedlog sadržaja</option>
+                    <option value="pohvala">Pohvala</option>
+                    <option value="ostalo">Ostalo</option>
+                </select>
+            </td>
+            <td>
+                <label for="prioritet">Hitnost:</label><br>
+                <input type="checkbox" id="prioritet" name="hitno" value="da"> Označi kao hitno
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="poruka">Poruka:</label><br>
+            <textarea id="poruka" name="poruka" rows="4" cols="60" required></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Pošalji upit">
+                <input type="reset" value="Poništi">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <a href="mailto:isvaco@tvz.hr">Pošaljite e-mail izravno studentu</a>
+            </td>
+        </tr>
+    </table>
+</form>
+<br>
+
+<div class="mapa">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50630.17003439241!2d-122.24756798134685!3d37.52240602472027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f98af85383a77%3A0x5a0512bbcc5eeb58!2sElectronic%20Arts!5e0!3m2!1sen!2shr!4v1748892734239!5m2!1sen!2shr"
+    width="1360" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+</div>
+    </main>
+
+    <footer>
+        <h3>Iris Švaco 0036561121</h3>
+    </footer>
+
+
+</body>
+</html>
