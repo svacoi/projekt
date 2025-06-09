@@ -1,0 +1,510 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("images/pozadina1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+mark {
+    background-color: rgb(224, 255, 227);
+}
+
+
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(118,218,150);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header img {
+    height: 126px;
+    margin-bottom: 10px;
+}
+
+.navigacija {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigacija li {
+    margin: 0;
+}
+
+.navigacija a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(7, 120, 85); 
+    border-radius: 8px;
+    font-family: 'Titillium Web', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: inline-block;
+}
+
+.navigacija a:hover {
+    background-color: rgb(5, 95, 70);
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .navigacija {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+footer {
+    min-height: 50px;
+    background-color: rgb(118, 218, 150);
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer h3 {
+    color: white;
+    margin: 0;
+    line-height: 50px;
+}
+
+
+
+.prosirenja img {
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+.slikice {
+    text-align: center;
+}
+
+.slikice img {
+    height: 250px;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px; 
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+}
+
+.video {
+    text-align: center;
+    margin: 20px 0;
+    border: none;
+}
+
+.moja-tablica {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.moja-tablica td, 
+.moja-tablica th {
+    border: 1px solid black;
+}
+
+p {
+    color: rgb(6, 12, 86);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+    background-color: rgb(199,239,203);
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    width: 66%;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(6, 12, 86);
+  }
+
+nav {
+    background-color: rgb(118, 218, 150);
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    width: 90%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    background-color: rgb(7, 120, 85);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: rgb(5, 95, 70);
+    transform: scale(1.05);
+}
+
+
+th, td {
+    border: 1px solid rgb(5, 95, 70);
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+table {
+    background-color: rgb(199,239,203);
+    color: rgb(7, 7, 53);
+    font-family: 'Titillium Web', sans-serif;
+} 
+
+.kontakt {
+    color: rgb(7, 7, 53);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.content {
+    width: 75%;
+    padding: 20px;
+    position: relative;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#ea-logo {
+    position: fixed;
+    top: 540px;
+    left: 1400px;
+    width: 250px;
+}
+
+.sidebar {
+    background-color: rgb(199, 239, 203);
+    color: rgb(7, 7, 53);
+    font-family: 'Titillium Web', sans-serif;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 12px 0 0 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+    margin: 0;
+  }
+
+.hc {
+  overflow: hidden;
+  padding: 20px;
+  padding-bottom: 0%;
+  border-bottom: 1px solid #ddd;
+}
+
+.page-title {
+  float: left;
+  margin: 0;
+  font-size: 32px;
+  color: white;
+}
+
+.navigacija1 {
+  float: right;
+  width: auto;
+  margin-top: 0;
+  padding-top: 0;
+  padding: 10px;
+}
+
+.navigacija1 a {
+  display: inline-block;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14.4px;
+  margin: 10px;
+}
+
+@media (max-width: 576px) {
+  .page-title,
+  .navigacija1 {
+    float: right;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .navigacija1 a {
+    margin: 0 8px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+.mapa {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.font {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.proizvod {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.proizvod img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.proizvod h2 {
+  font-size: 19.2px;
+  margin: 0 0 10px;
+  justify-content: center;
+}
+
+.proizvod p {
+  flex-grow: 1;
+  font-size: 14.4px;
+  margin-bottom: 15px;
+}
+
+.cijena {
+  font-size: 17.6px;
+  margin-bottom: 15px;
+}
+
+.cijena.stara {
+  color: #999;
+  text-decoration: line-through;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.cijena.nova {
+  color: #e63946;
+}
+
+button {
+  background-color: #457b9d;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 1s;
+}
+
+button:hover {
+  background-color: #1d3557;
+}
+
+@media (max-width: 800px) {
+  .proizvod {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 500px) {
+  .proizvod {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.cijena {
+  display: flex;
+  align-items: center;
+  font-size: 17.6px;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.stara {
+  color: #999;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.nova {
+  color: #e63946;
+}
+
+.centar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner {
+  background-image: url('images/crvena.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+  color: #e63946;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.banner2 {
+  position: relative;
+  z-index: 2;
+}
+
+.banner h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.banner2 h1 {
+  font-size: 38px;
+}
+
+.banner p {
+  font-size: 17.6px;
+}
+
+.vise {
+    display: inline-block;
+    background-color: rgb(7, 120, 85);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    text-align: center;
+}
+
+.vise:hover {
+    background-color: rgb(5, 95, 70);
+    transform: scale(1.05);
+}
+
+.font h2 {
+    background-color: rgb(199,239,203);
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    width: 66%;
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(6, 12, 86);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.font h3 {
+      color: rgb(6, 12, 86);
+      font-weight: 600;
+      font-size: 22px;
+}
+
+.font h5 {
+      color: rgb(6, 12, 86);
+      font-size: 16px;
+}
+
+.foot {
+    color: white;
+    margin: 0;
+    line-height: 50px;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.font h1 {
+    color: rgb(6, 12, 86);
+    font-family: "Luckiest Guy", cursive;
+    font-size: 46px;
+}
+
+.banner h1 {
+    font-family: "Luckiest Guy", cursive;
+}
+
+.hc h1 {
+  display: inline-block;
+}
+
+.hc i.fa-bell {
+  margin-left: 10px;
+  margin-bottom: 18px;
+  vertical-align: middle; 
+}
+
+
+.prvi h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 100;
+}
+
+.hc,
+.d-flex,
+.cent,
+.container,
+.font {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
